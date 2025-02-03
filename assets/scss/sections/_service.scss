@@ -1,0 +1,84 @@
+
+@use "../base/variables";
+@use "../base/mixins";
+
+.service_job {
+  background-color: variables.$primary-background-color;
+  border: variables.$primary-background-color solid 1px;
+  border-top-right-radius: 50px 50px;
+  margin-right: 50px;
+  padding: 50px 20px;
+
+  br {
+    display: none;
+
+    @include mixins.responsive(desktop) {
+      display: block;
+    }
+  }
+
+  @include mixins.responsive(desktop) {
+    margin-right: 100px;
+    padding: 0;
+  }
+
+  .service_job_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+
+    .service_job_flex_items {
+      max-width: 380px;
+      margin: 0 auto;
+
+      @include mixins.responsive(desktop) {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        max-width: unset;
+        margin: unset;
+      }
+
+      span {
+        @include mixins.section-heading-text();
+      }
+
+      h2 {
+        @include mixins.section-title(
+                $weight: 700,
+                $color: variables.$primary-color,
+                $lineHeight: 1.2,
+                $marginBottom: 1rem,
+                $marginTop: 1rem,
+                $letterSpacing: 1px
+        );
+      }
+
+      p {
+        width: 100%;
+        max-width: 400px;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+        @include mixins.font-barlow-light($color: variables.$primary-color);
+      }
+
+      button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @include mixins.font-barlow-light($color: variables.$primary-color);
+        @include mixins.buttonService();
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+
+@use "../base/variables";
+@use "../base/mixins";
+
+.slide_partner {
+
+  @include mixins.responsive(desktop){
+    padding: 0 20px;
+
+  }
+
+  .swiper {
+
+    width: 100%;
+    height: auto;
+
+    @include mixins.responsive(tablet) {
+      height: 300px;
+    }
+
+    @include mixins.responsive(desktop) {
+      height: 500px;
+    }
+
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+
+      @include mixins.responsive(tablet) {
+        height: 300px;
+      }
+      @include mixins.responsive(desktop) {
+        height: 500px;
+      }
+    }
+  }
+}

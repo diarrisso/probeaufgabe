@@ -1,0 +1,87 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+footer {
+  border-top: 1px solid #d5d5d5;
+  padding: 30px 0;
+  @include  mixins.font-barlow-light($color: variables.$secondary-color);
+
+  .footer_wrapper {
+    @include  mixins.flex($justify: space-evenly, $align: center, $direction: column);
+    gap: 1rem;
+    text-align: center;
+
+    @include  mixins.responsive(desktop) {
+      text-align: start;
+      flex-direction: row;
+      gap: 4rem;
+    }
+
+    ul li {
+      line-height: 1.6;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .footer_wrapper_social_media_link {
+      display: flex;
+      gap: 1rem;
+      transition: all 0.3s ease;
+      margin: 1rem 0;
+      @include mixins.responsive(desktop) {
+         margin: 0;
+      }
+
+      svg {
+        path,
+        circle {
+          transition: all 0.3s ease;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        svg {
+          path {
+            fill: variables.$secondary-color;
+          }
+
+          circle {
+            stroke: variables.$secondary-color;
+          }
+        }
+      }
+    }
+
+    .footer_wrapper_address_contact {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+
+      @include mixins.responsive(desktop) {
+        gap: 4rem;
+        flex-direction: row;
+      }
+    }
+
+    .footer_wrapper_link {
+
+      display: flex;
+      flex-direction: column;
+
+      p{
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@use "../base/mixins";
+
+section {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include mixins.responsive(desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

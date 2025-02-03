@@ -1,0 +1,57 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.newsletter_block {
+  background: linear-gradient(to right, variables.$green 15%, variables.$green-bold 85%);
+  margin-right: 50px;
+  padding: 50px 0;
+
+  @include mixins.responsive(desktop) {
+    margin-right: 100px;
+  }
+
+  .newsletter_block_flex {
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+
+
+    span {
+      color: white!important;
+      @include mixins.section-heading-text($color: variables.$white);
+
+
+    }
+
+    h2 {
+      @include mixins.section-title(
+              $weight: 700,
+              $color: variables.$white,
+              $lineHeight: 1.2,
+              $marginBottom: 0,
+              $marginTop: 0,
+              $letterSpacing: 0
+      );
+      font-size: 1.5rem;
+    }
+
+    div {
+      @include mixins.font-barlow-light();
+      line-height: 1.6;
+    }
+
+    h2, div {
+      margin: 0.5rem 0;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+
+      @include mixins.buttonNewsletter();
+    }
+  }
+}
