@@ -91,8 +91,6 @@
   }
 
   .nav-links {
-
-
     list-style: none;
     z-index: 20;
     padding: 15px;
@@ -101,15 +99,12 @@
 
 
     @include  mixins.responsive(desktop){
-
-    }
-
-    @include  mixins.responsive(desktop){
       position: fixed;
       top: 50%;
       left: 50%;
       text-align: center;
-
+      padding: 0;
+      transform: translate(-50%, -50%);
     }
 
     li {

@@ -24,11 +24,11 @@ const Navbar = () => {
                     {isOpen && (
                         <div className={`overlay ${isOpen ? "active" : ""}`}>
                             <ul className="nav-links" id='menu'>
-                                <li><a href='#partner'>Shopware Partner</a></li>
-                                <li><a href='#service'>Service</a></li>
-                                <li><a href='#jobs'>Jobs</a></li>
-                                <li><a href='#newsletter'>Newsletter</a></li>
-                                <li><a href='#contact'>Contakt</a></li>
+                                <li><a href='#partner' onClick={() => setIsOpen(false)}>Shopware Partner</a></li>
+                                <li><a href='#service' onClick={() => setIsOpen(false)}>Service</a></li>
+                                <li><a href='#jobs' onClick={() => setIsOpen(false)}>Jobs</a></li>
+                                <li><a href='#newsletter' onClick={() => setIsOpen(false)}>Newsletter</a></li>
+                                <li><a href='#contact' onClick={() => setIsOpen(false)}>Contakt</a></li>
                             </ul>
                         </div>
 
