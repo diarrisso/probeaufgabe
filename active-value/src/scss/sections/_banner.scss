@@ -6,7 +6,6 @@
 
   @include mixins.responsive(desktop){
     padding: 0 20px;
-
   }
 
   .swiper {
@@ -21,7 +20,6 @@
     @include mixins.responsive(desktop) {
       height: 500px;
     }
-
 
     img {
       width: 100%;

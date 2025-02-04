@@ -1,0 +1,32 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+
+.btn-primary {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid variables.$service-border-Button;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  @include mixins.font-barlow-light($color: black);
+
+  &:hover {
+    background-color: variables.$primary-background-color;
+  }
+}
+
+
+.btn-service {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @include mixins.font-barlow-light($color: variables.$primary-color);
+  @include mixins.buttonService();
+}
+
+.btn-newsletter {
+  margin-top: 15px;
+  padding: 10px 20px;
+  @include mixins.buttonNewsletter();
+}

@@ -98,11 +98,10 @@
     padding: 15px;
     top: 27%;
     position: fixed;
-    text-align: co;
+
 
     @include  mixins.responsive(desktop){
-      padding: 0;
-      transform: translate(-50%, -50%);
+
     }
 
     @include  mixins.responsive(desktop){
@@ -110,6 +109,7 @@
       top: 50%;
       left: 50%;
       text-align: center;
+
     }
 
     li {

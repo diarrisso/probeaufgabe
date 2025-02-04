@@ -1,31 +1,41 @@
-<section class='partner' id='partnerDescription'>
-    <div class='partner_flex'>
-        <span>April 2019</span>
-        <h1>Shopware als starker<br>Partner</h1>
-        <div class='partner_flex_description'>
-            <p>
-                Shopware Shopsystem Shopware als starker Partner wir haben eine Vielzahl von individuellen Webshops für
-                ein diverses Kundenfeld entwickelt und umgesetzt – darunter sind
-                namhafte Unternehmen wie Zwiesel Glas und van Laack.
-            </p>
-            <p>
-                Bei der Umsetzung können wir auf
-                Shopware als zuverlässigen Partner zurückgreifen. Durch die Business-Kooperation mit
-                Shopware sind unsere zertifizierten Entwickler in der Lage, unseren Kunden immer die neusten,
-                innovativsten und sichersten Shop-Lösungen anzubieten. Um immer auf dem aktuellsten Stand zu sein,
-                treffen wir unseren Kooperationspartner auf der jährlichen Fachmesse „Shopware Community Day“ und
-                stehen in einem regelmäßigen Austausch. Dadurch sind wir in der Lage, kurzfristig auf die neusten
-                Entwicklungen
-                zu reagieren – dazu gehört unter anderem die Verwendung von Shopware 6,
-                wodurch wir schon jetzt qualitativ hochwertige Headless-Shop-Projekte (API-first) umsetzen können.
-            </p>
-        </div>
+const PartnerSection = () => {
 
-        <div class='partner_flex_icons'>
+
+    return (
+
+        <section className='partner' id='partnerDescription'>
+            <div className='partner_flex'>
+                <span>April 2019</span>
+                <h1>Shopware als starker<br/>Partner</h1>
+                <div className='partner_flex_description'>
+                    <p>
+                        Shopware Shopsystem Shopware als starker Partner wir haben eine Vielzahl von individuellen
+                        Webshops für
+                        ein diverses Kundenfeld entwickelt und umgesetzt – darunter sind
+                        namhafte Unternehmen wie Zwiesel Glas und van Laack.
+                    </p>
+                    <p>
+                        Bei der Umsetzung können wir auf
+                        Shopware als zuverlässigen Partner zurückgreifen. Durch die Business-Kooperation mit
+                        Shopware sind unsere zertifizierten Entwickler in der Lage, unseren Kunden immer die neusten,
+                        innovativsten und sichersten Shop-Lösungen anzubieten. Um immer auf dem aktuellsten Stand zu
+                        sein,
+                        treffen wir unseren Kooperationspartner auf der jährlichen Fachmesse „Shopware Community Day“
+                        und
+                        stehen in einem regelmäßigen Austausch. Dadurch sind wir in der Lage, kurzfristig auf die
+                        neusten
+                        Entwicklungen
+                        zu reagieren – dazu gehört unter anderem die Verwendung von Shopware 6,
+                        wodurch wir schon jetzt qualitativ hochwertige Headless-Shop-Projekte (API-first) umsetzen
+                        können.
+                    </p>
+                </div>
+
+                <div className='partner_flex_icons'>
                 <span>
-                     <a href='https://www.example.com' target='_blank' class='partner_media_social_icons_link '>
+                     <a href='https://www.example.com' target='_blank' className='partner_media_social_icons_link '>
                         <svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'>
-                            <g fill='none' fill-rule='evenodd'>
+                            <g fill='none' fillRule='evenodd'>
                                 <g>
                                     <g transform='translate(-153 -860) translate(154 861)'>
                                         <circle cx='25' cy='25' r='25' fill='#FFF' stroke='#333'/>
@@ -37,21 +47,21 @@
                         </svg>
                      </a>
                 </span>
-                <span>
-                     <a href='https://www.example.com' target='_blank' class='partner_media_social_icons_link '>
+                    <span>
+                     <a href='https://www.example.com' target='_blank' className='partner_media_social_icons_link '>
                         <svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'>
-                            <g fill='none' fill-rule='evenodd'>
+                            <g fill='none' fillRule='evenodd'>
                                 <g>
                                     <g>
                                         <g transform='translate(-223 -860) translate(154 861) translate(70)'>
                                             <circle cx='25' cy='25' r='25' fill='#FFF' stroke='#AFB3B6'/>
                                             <g fill='#AFB3B6'>
                                                 <path
-                                                        d='M15.178 11.004c0-2.227-1.79-4.019-4.018-4.02-2.221 0-4.016 1.792-4.017 4.013-.002 2.224 1.788 4.021 4.007 4.022 2.235.002 4.028-1.786 4.028-4.015m-4.016 4.908c-2.715 0-4.914-2.207-4.912-4.931.001-2.687 2.215-4.892 4.91-4.89 2.707.001 4.914 2.21 4.911 4.913-.003 2.702-2.21 4.909-4.909 4.908M16.963 6.09c-.49 0-.891-.4-.892-.888 0-.491.401-.896.893-.897.497-.001.894.404.893.91-.001.48-.405.876-.894.876'
-                                                        transform='translate(14.286 13.552)'/>
+                                                    d='M15.178 11.004c0-2.227-1.79-4.019-4.018-4.02-2.221 0-4.016 1.792-4.017 4.013-.002 2.224 1.788 4.021 4.007 4.022 2.235.002 4.028-1.786 4.028-4.015m-4.016 4.908c-2.715 0-4.914-2.207-4.912-4.931.001-2.687 2.215-4.892 4.91-4.89 2.707.001 4.914 2.21 4.911 4.913-.003 2.702-2.21 4.909-4.909 4.908M16.963 6.09c-.49 0-.891-.4-.892-.888 0-.491.401-.896.893-.897.497-.001.894.404.893.91-.001.48-.405.876-.894.876'
+                                                    transform='translate(14.286 13.552)'/>
                                                 <path
-                                                        d='M11.09 21.243h4.45c.53 0 1.054-.058 1.566-.203 1.162-.33 2.123-.97 2.87-1.923.8-1.024 1.184-2.197 1.184-3.498l-.001-8.985c0-.377-.03-.752-.103-1.123-.212-1.086-.697-2.032-1.47-2.818-1.093-1.113-2.427-1.675-3.985-1.678-3.012-.004-6.023 0-9.034-.001-.353 0-.702.028-1.048.096-1.464.29-2.634 1.045-3.498 2.264-.691.973-1.01 2.068-1.009 3.263.003 2.992 0 5.984.003 8.976 0 .288.017.579.056.864.106.789.377 1.52.804 2.19.607.95 1.426 1.655 2.455 2.11.73.324 1.498.468 2.295.466h4.466zM.005 11.126c0-1.537-.011-3.074.004-4.612.015-1.583.538-2.987 1.561-4.193C2.59 1.118 3.884.381 5.432.098 5.812.028 6.197 0 6.584 0l8.988.001c1.574 0 2.98.493 4.195 1.496 1.178.974 1.93 2.217 2.255 3.717.098.452.143.91.143 1.374-.001 3.042.004 6.085-.003 9.128-.003 1.414-.429 2.697-1.262 3.837-.838 1.15-1.939 1.945-3.288 2.387-.63.207-1.277.311-1.94.312-3.053.001-6.107.007-9.161-.002-1.522-.005-2.881-.498-4.065-1.458-1.134-.92-1.88-2.094-2.244-3.512-.138-.536-.198-1.084-.198-1.637v-4.517z'
-                                                        transform='translate(14.286 13.552)'/>
+                                                    d='M11.09 21.243h4.45c.53 0 1.054-.058 1.566-.203 1.162-.33 2.123-.97 2.87-1.923.8-1.024 1.184-2.197 1.184-3.498l-.001-8.985c0-.377-.03-.752-.103-1.123-.212-1.086-.697-2.032-1.47-2.818-1.093-1.113-2.427-1.675-3.985-1.678-3.012-.004-6.023 0-9.034-.001-.353 0-.702.028-1.048.096-1.464.29-2.634 1.045-3.498 2.264-.691.973-1.01 2.068-1.009 3.263.003 2.992 0 5.984.003 8.976 0 .288.017.579.056.864.106.789.377 1.52.804 2.19.607.95 1.426 1.655 2.455 2.11.73.324 1.498.468 2.295.466h4.466zM.005 11.126c0-1.537-.011-3.074.004-4.612.015-1.583.538-2.987 1.561-4.193C2.59 1.118 3.884.381 5.432.098 5.812.028 6.197 0 6.584 0l8.988.001c1.574 0 2.98.493 4.195 1.496 1.178.974 1.93 2.217 2.255 3.717.098.452.143.91.143 1.374-.001 3.042.004 6.085-.003 9.128-.003 1.414-.429 2.697-1.262 3.837-.838 1.15-1.939 1.945-3.288 2.387-.63.207-1.277.311-1.94.312-3.053.001-6.107.007-9.161-.002-1.522-.005-2.881-.498-4.065-1.458-1.134-.92-1.88-2.094-2.244-3.512-.138-.536-.198-1.084-.198-1.637v-4.517z'
+                                                    transform='translate(14.286 13.552)'/>
                                             </g>
                                         </g>
                                     </g>
@@ -60,8 +70,8 @@
                         </svg>
                      </a>
                 </span>
-                <span>
-                     <a href='https://www.example.com' target='_blank' class='partner_media_social_icons_link '>
+                    <span>
+                     <a href='https://www.example.com' target='_blank' className='partner_media_social_icons_link '>
                         <svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'>
                             <g fill='none' fill-rule='evenodd'>
                                 <g>
@@ -77,8 +87,8 @@
                         </svg>
                      </a>
                </span>
-               <span>
-                  <a href='https://www.example.com' target='_blank' class='partner_media_social_icons_link '>
+                    <span>
+                  <a href='https://www.example.com' target='_blank' className='partner_media_social_icons_link '>
                      <svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'>
                         <g fill='none' fill-rule='evenodd'>
                             <g>
@@ -94,8 +104,8 @@
                     </svg>
                      </a>
                </span>
-               <span>
-                     <a href='https://www.example.com' target='_blank' class='partner_media_social_icons_link '>
+                    <span>
+                     <a href='https://www.example.com' target='_blank' className='partner_media_social_icons_link '>
                         <svg width='52' height='52' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'
                              xmlns:xlink='http://www.w3.org/1999/xlink'>
                             <defs>
@@ -104,21 +114,25 @@
                             <g transform='translate(1 1)' fill='none' fill-rule='evenodd'>
                                 <circle stroke='#AFB3B6' cx='25' cy='25' r='25'/>
                                 <path
-                                        d='M32.1 32.912h3.827l.001-1.784c.001-2.09.003-4.18-.003-6.27-.005-1.547-.268-2.747-.827-3.775-.538-.99-1.295-1.659-2.315-2.043-.85-.32-1.774-.416-2.748-.286-.983.132-1.768.522-2.397 1.194-.187.196-.358.409-.536.627l-1.22 1.46V19.91c-.001-.289-.002-.576 0-.864-1.048.003-2.091.003-3.134.003h-.677v13.858h3.812v-1.584c-.001-2.023-.002-4.045.005-6.067.002-.397.005-.89.14-1.356.382-1.317 1.524-2.262 2.84-2.351 1.404-.094 2.478.603 2.936 1.917.261.747.296 1.497.296 2.13v7.315zM36.453 34h-5.424v-8.403c0-.542-.027-1.175-.233-1.767-.374-1.067-1.219-1.238-1.856-1.195-1.007.069-1.673.84-1.886 1.575-.092.317-.093.707-.095 1.052-.008 2.02-.007 4.04-.006 6.061v2.673H21V17.962h1.748c1.153.002 2.304.003 3.455-.004.082-.002.354 0 .558.208.203.209.199.48.197.57l-.006.366c.782-.79 1.771-1.269 2.943-1.425 1.15-.153 2.245-.037 3.26.344 1.253.471 2.223 1.324 2.881 2.536.649 1.195.954 2.561.96 4.297.006 2.092.004 4.183.003 6.275l-.047 2.817-.5.054zM13.96 18.723c.002 4.73.002 9.448 0 14.166.937-.005 1.867-.003 2.796-.003h.618v-14.16h-.617c-.932 0-1.865.001-2.797-.003zM13.66 34a.613.613 0 0 1-.48-.206c-.18-.21-.18-.478-.18-.578.002-4.94.002-9.88 0-14.82-.002-.09-.002-.366.18-.575.18-.21.419-.211.495-.21 1.027.006 2.054.005 3.081.005h1.576v16.38h-1.577c-1.026 0-2.054-.002-3.08.004h-.015z'
-                                        fill='#AFB3B6' fill-rule='nonzero'/>
+                                    d='M32.1 32.912h3.827l.001-1.784c.001-2.09.003-4.18-.003-6.27-.005-1.547-.268-2.747-.827-3.775-.538-.99-1.295-1.659-2.315-2.043-.85-.32-1.774-.416-2.748-.286-.983.132-1.768.522-2.397 1.194-.187.196-.358.409-.536.627l-1.22 1.46V19.91c-.001-.289-.002-.576 0-.864-1.048.003-2.091.003-3.134.003h-.677v13.858h3.812v-1.584c-.001-2.023-.002-4.045.005-6.067.002-.397.005-.89.14-1.356.382-1.317 1.524-2.262 2.84-2.351 1.404-.094 2.478.603 2.936 1.917.261.747.296 1.497.296 2.13v7.315zM36.453 34h-5.424v-8.403c0-.542-.027-1.175-.233-1.767-.374-1.067-1.219-1.238-1.856-1.195-1.007.069-1.673.84-1.886 1.575-.092.317-.093.707-.095 1.052-.008 2.02-.007 4.04-.006 6.061v2.673H21V17.962h1.748c1.153.002 2.304.003 3.455-.004.082-.002.354 0 .558.208.203.209.199.48.197.57l-.006.366c.782-.79 1.771-1.269 2.943-1.425 1.15-.153 2.245-.037 3.26.344 1.253.471 2.223 1.324 2.881 2.536.649 1.195.954 2.561.96 4.297.006 2.092.004 4.183.003 6.275l-.047 2.817-.5.054zM13.96 18.723c.002 4.73.002 9.448 0 14.166.937-.005 1.867-.003 2.796-.003h.618v-14.16h-.617c-.932 0-1.865.001-2.797-.003zM13.66 34a.613.613 0 0 1-.48-.206c-.18-.21-.18-.478-.18-.578.002-4.94.002-9.88 0-14.82-.002-.09-.002-.366.18-.575.18-.21.419-.211.495-.21 1.027.006 2.054.005 3.081.005h1.576v16.38h-1.577c-1.026 0-2.054-.002-3.08.004h-.015z'
+                                    fill='#AFB3B6' fill-rule='nonzero'/>
                                 <g transform='translate(13 10)'>
                                     <mask id='ie9awjsr7b' fill='#fff'>
                                         <use xlink:href='#srbtsitssa'/>
                                     </mask>
                                     <path
-                                            d='M3.012.976c-.252 0-.518.043-.8.13-.541.165-.961.565-1.152 1.098a1.834 1.834 0 0 0 .187 1.61c.352.556.885.821 1.675.836h.015c.147-.011.634-.083.84-.16.663-.246 1.027-.708 1.11-1.41.09-.756-.137-1.318-.696-1.72A1.968 1.968 0 0 0 3.01.976zm-.108 4.65C1.8 5.604.974 5.173.449 4.345a2.822 2.822 0 0 1-.283-2.479A2.716 2.716 0 0 1 1.938.171c1.05-.32 1.993-.19 2.8.391.849.61 1.228 1.521 1.095 2.635-.126 1.058-.741 1.843-1.732 2.21-.008.004-.753.236-1.197.21v.008z'
-                                            fill='#AFB3B6' fill-rule='nonzero' mask='url(#ie9awjsr7b)'/>
+                                        d='M3.012.976c-.252 0-.518.043-.8.13-.541.165-.961.565-1.152 1.098a1.834 1.834 0 0 0 .187 1.61c.352.556.885.821 1.675.836h.015c.147-.011.634-.083.84-.16.663-.246 1.027-.708 1.11-1.41.09-.756-.137-1.318-.696-1.72A1.968 1.968 0 0 0 3.01.976zm-.108 4.65C1.8 5.604.974 5.173.449 4.345a2.822 2.822 0 0 1-.283-2.479A2.716 2.716 0 0 1 1.938.171c1.05-.32 1.993-.19 2.8.391.849.61 1.228 1.521 1.095 2.635-.126 1.058-.741 1.843-1.732 2.21-.008.004-.753.236-1.197.21v.008z'
+                                        fill='#AFB3B6' fill-rule='nonzero' mask='url(#ie9awjsr7b)'/>
                                 </g>
                             </g>
                         </svg>
                     </a>
               </span>
-        </div>
-    </div>
+                </div>
+            </div>
 
-</section>
+        </section>
+    )
+}
+
+export default PartnerSection;

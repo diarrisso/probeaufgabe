@@ -47,11 +47,5 @@
       margin: 0.5rem 0;
     }
 
-    button {
-      margin-top: 15px;
-      padding: 10px 20px;
-
-      @include mixins.buttonNewsletter();
-    }
   }
 }

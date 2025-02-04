@@ -72,13 +72,6 @@
         margin-bottom: 0.5rem;
         @include mixins.font-barlow-light($color: variables.$primary-color);
       }
-
-      button {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        @include mixins.font-barlow-light($color: variables.$primary-color);
-        @include mixins.buttonService();
-      }
     }
   }
 }
