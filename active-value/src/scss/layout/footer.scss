@@ -4,7 +4,7 @@
 footer {
   border-top: 1px solid #d5d5d5;
   padding: 30px 0;
-  @include  mixins.font-barlow-light($color: variables.$secondary-color);
+  @include mixins.font-barlow-light();
 
   .footer_wrapper {
     @include  mixins.flex($justify: space-evenly, $align: center, $direction: column);

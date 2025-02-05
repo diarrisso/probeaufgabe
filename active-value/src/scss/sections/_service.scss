@@ -7,7 +7,7 @@
   border: variables.$primary-background-color solid 1px;
   border-top-right-radius: 50px 50px;
   margin-right: 50px;
-  padding: 50px 20px;
+  padding: calc(2vw + 20px) calc(1vw + 10px);
 
   br {
     display: none;
@@ -18,20 +18,20 @@
   }
 
   @include mixins.responsive(desktop) {
-    margin-right: 100px;
-    padding: 0;
+    margin-right: calc(5vw + 5px);
+    padding: calc(1vw + 10px) calc(0.5vw + 5px);
+
   }
 
   .service_job_flex {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     width: 100%;
 
 
     @media (min-width: 600px) {
       flex-direction: row;
-      gap: 2rem;
       align-items: stretch;
     }
 
@@ -52,12 +52,15 @@
 
       span {
         @include mixins.section-heading-text();
+        color: #8d8282;
       }
 
       h2 {
+        max-width: 350px;
+        width: 100%;
         @include mixins.section-title(
                 $weight: 700,
-                $color: variables.$primary-color,
+                $color: black,
                 $lineHeight: 1.2,
                 $marginBottom: 1rem,
                 $marginTop: 1rem,
@@ -70,7 +73,7 @@
         max-width: 400px;
         line-height: 1.4;
         margin-bottom: 0.5rem;
-        @include mixins.font-barlow-light($color: variables.$primary-color);
+        @include mixins.font-barlow-light();
       }
     }
   }

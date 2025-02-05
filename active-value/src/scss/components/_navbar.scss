@@ -36,7 +36,7 @@
     color: variables.$secondary-color;
     outline: 0;
     z-index: 1000;
-    @include  mixins.font-barlow-light($color: variables.$secondary-color,);
+    @include mixins.font-barlow-light();
     text-transform: uppercase;
 
 
@@ -46,7 +46,7 @@
 
     span {
       display: block;
-      width: 43px;
+      width: 45px;
       height: 2px;
       background: variables.$secondary-color;
       margin-bottom: 6px;
@@ -124,7 +124,7 @@
       color: variables.$primary-color;
       text-decoration: none;
       font-size: 2rem;
-      @include mixins.font-poppins();
+      @include mixins.font-poppins($weight: bold);
 
       &:hover {
         text-decoration: underline;

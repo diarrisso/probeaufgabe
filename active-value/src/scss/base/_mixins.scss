@@ -4,34 +4,31 @@
 @mixin font-poppins($weight: 400) {
   font-family: 'Poppins', sans-serif;
   font-weight: $weight;
-  color: black;
 }
 
-@mixin font-barlow($weight: 300, $color: black) {
+@mixin font-barlow($weight: 300) {
   font-family: 'Barlow', sans-serif;
   font-weight: $weight;
   font-style: normal;
   font-size: 1rem;
   line-height: 1.6;
-  color: $color;
 }
 
 
-@mixin font-barlow-light($color: variables.$white) {
-  @include font-barlow(300, $color);
+@mixin font-barlow-light() {
+  @include font-barlow($weight: 300);
 }
 
-@mixin font-barlow-semiBold($color: variables.$white) {
-  @include font-barlow(400, $color);
+@mixin font-barlow-semiBold() {
+  @include font-barlow($weight: 400);
 }
 
 
-@mixin section-heading-text($color: variables.$heading-text-color) {
-  color: $color;
+@mixin section-heading-text() {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 0.8rem;
-  @include font-barlow(700);
+  @include font-barlow($weight: 700);
   @include responsive(desktop) {
     font-size: 1rem;
   }
@@ -45,7 +42,7 @@
   $marginTop: 1rem,
   $letterSpacing: 1px
 ) {
-  @include font-poppins($weight);
+  @include font-poppins($weight: bold);
   color: $color;
   line-height: $lineHeight;
   margin-top: $marginTop;

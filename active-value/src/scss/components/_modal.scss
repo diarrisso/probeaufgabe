@@ -27,20 +27,24 @@
   margin: auto;
   padding: 60px;
   position: relative;
+  color: black;
+
 
   h2 {
-    @include  mixins.font-poppins();
+    @include mixins.font-poppins($weight: 700);
+
     line-height: 1.2!important;
   }
 
 
   p{
-    @include  mixins.font-barlow-light($color: black);
+    @include mixins.font-barlow-light();;
   }
 
   h2 , p{
     width: 400px;
     margin-bottom: 1rem;
+
 
   }
 

@@ -51,6 +51,7 @@ const ContactFormSection = ({showModal = false, closeModal}) => {
                                     id="firstName"
                                     name="firstName"
                                     value={firstName}
+                                    label="Vorname"
                                     onChange={(e) => setFirstName(e.target.value)}
                                 />
 
@@ -58,6 +59,7 @@ const ContactFormSection = ({showModal = false, closeModal}) => {
                                     id="lastName"
                                     name="lastName"
                                     value={lastName}
+                                    label="Nachname"
                                     onChange={(e) => setLastName(e.target.value)}
                                 />
 
@@ -66,6 +68,7 @@ const ContactFormSection = ({showModal = false, closeModal}) => {
                                     id="email"
                                     name="email"
                                     value={email}
+                                    label="Email-addresse"
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
 

@@ -21,7 +21,7 @@
 
     span {
       color: white!important;
-      @include mixins.section-heading-text($color: variables.$white);
+      @include mixins.section-heading-text();
 
 
     }
@@ -41,6 +41,7 @@
     div {
       @include mixins.font-barlow-light();
       line-height: 1.6;
+      color: white;
     }
 
     h2, div {

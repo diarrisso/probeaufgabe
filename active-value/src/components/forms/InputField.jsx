@@ -1,7 +1,7 @@
-const InputField = ({type = 'text', value, name, id, onChange}) => {
+const InputField = ({type = 'text', value, name, id, label, onChange}) => {
     return (
         <div className='form-group'>
-            <label htmlFor={id || name}>{name}:</label>
+            <label htmlFor={id || name}>{label}:</label>
             <input
                 type={type}
                 id={id || name}

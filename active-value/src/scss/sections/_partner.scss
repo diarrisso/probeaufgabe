@@ -2,7 +2,10 @@
 @use "../base/variables";
 
 .partner {
-  margin-top: 2rem;
+
+  @include mixins.responsive(desktop) {
+    margin-top: 2rem;
+  }
 
   .partner_flex {
     display: flex;
@@ -10,6 +13,8 @@
     justify-content: center;
     max-width: 1280px;
     margin: 0 auto;
+    padding: calc(5vw + 10px) 15px;
+
     @include  mixins.responsive(desktop) {
        padding: 40px 70px;
 
@@ -17,6 +22,7 @@
 
     span {
         @include mixins.section-heading-text();
+      color: #8d8282;
 
         &:nth-child(5){
 
@@ -26,7 +32,7 @@
     }
 
     h1 {
-        @include mixins.font-poppins($weight: 700 );
+      @include mixins.font-poppins($weight: bold);
         margin-top: 0.5rem;
         font-size: 3rem;
         line-height: 1.2;
@@ -35,7 +41,7 @@
     }
 
     p {
-         @include mixins.font-barlow-light($color: variables.$primary-color);
+      @include mixins.font-barlow-light();
          width: 100%;
          text-align: left;
          letter-spacing: 1px;
@@ -57,7 +63,7 @@
   .partner_flex_icons {
       @include mixins.flex($justify: flex-start, $direction: row);
       gap: 1rem;
-      margin: 5rem 0;
+    margin: 3rem 0;
 
   }
   .partner_media_social_icons_link {
