@@ -22,9 +22,9 @@
 
     span {
         @include mixins.section-heading-text();
-      color: #8d8282;
 
-        &:nth-child(5){
+
+      &:nth-child(5){
 
           display: none;
           @include  mixins.responsive(desktop) {display: block;}

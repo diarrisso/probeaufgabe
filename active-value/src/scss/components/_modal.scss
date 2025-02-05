@@ -69,14 +69,25 @@
 }
 */
 
+
+.error {
+  color: variables.$danger !important;
+}
+
 .close-button {
   color: variables.$secondary-color;
   float: right;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 5rem;
+
+
+  @include mixins.responsive(desktop) {
+    right: 1rem;
+    font-size: 2rem;
+  }
 
   &:hover {
 
