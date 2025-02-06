@@ -13,7 +13,6 @@ const NewsletterSection = () => {
                 <span>Newsletter</span>
                 <h2>Nichts verpassen!</h2>
                 <div>At wero iquam erat volutpat . Nullam scelerisque auctor libero</div>
-
                 <Button
                     type="button"
                     title="Newsletter abonnieren"

@@ -51,6 +51,13 @@ const Navbar = () => {
                         <div className={`overlay ${showOverlay ? "active" : ""}`}>
                             <ul className={`nav-links ${showLinks ? "active" : ""} ${setClosOverlay ? "closing" : ""}`}
                                 id='menu'>
+
+                                <NavLink
+                                    link="#partner"
+                                    title="Partner"
+                                    onClick={() => setIsOpen(false)}
+                                />
+
                                 <li><a href='#partner' onClick={() => setIsOpen(false)}>Shopware Partner</a></li>
                                 <li><a href='#service' onClick={() => setIsOpen(false)}>Service</a></li>
                                 <li><a href='#jobs' onClick={() => setIsOpen(false)}>Jobs</a></li>
@@ -67,3 +74,18 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+
+export const NavLink = ({link, onClick, title}) => {
+
+    return (
+        <li>
+            <a
+                href={link}
+                onClick={onClick}
+            >
+                {title}
+            </a>
+        </li>
+    )
+}

@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className='footer_wrapper_social_media_link'>
                         <div>
                             <svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'>
-                                <g fill='none' fill-rule='evenodd'>
+                                <g fill='none' fillRule='evenodd'>
                                     <circle cx='25' cy='25' r='25' fill='#FFF' stroke='#AFB3B6'/>
                                     <g fill='#AFB3B6'>
                                         <path
@@ -34,7 +34,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <svg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'>
-                                <g fill='none' fill-rule='evenodd'>
+                                <g fill='none' fillRule='evenodd'>
                                     <g>
                                         <g>
                                             <g transform='translate(-293 -860) translate(154 861) translate(140)'>
