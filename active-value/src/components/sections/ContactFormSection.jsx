@@ -1,5 +1,5 @@
 import InputField from "../forms/InputField.jsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Button from "../forms/Button.jsx";
 
 const ContactFormSection = ({showModal = false, closeModal}) => {
@@ -24,7 +24,15 @@ const ContactFormSection = ({showModal = false, closeModal}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+
         if (validationForm()) {
+
+
+            useEffect(() => {
+
+            }, []);
+
+
             setMessage("your message has been successfully submitted ");
         }
 
