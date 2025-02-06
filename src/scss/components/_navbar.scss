@@ -3,10 +3,10 @@
 
 .navbar_items {
 
-  @include  mixins.flex($justify: space-between);
+  @include mixins.flex($justify: space-between);
   padding: 10px 15px;
   width: 100%;
-  @include  mixins.font-barlow-light();
+  @include mixins.font-barlow-light();
   @include mixins.responsive(desktop) {
     padding: 10px 20px;
   }
@@ -40,7 +40,7 @@
     text-transform: uppercase;
 
 
-    &.active  {
+    &.active {
       color: transparent;
     }
 
@@ -81,59 +81,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
     z-index: 999;
-  }
 
-  .overlay.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-links {
-    list-style: none;
-    z-index: 20;
-    padding: 15px;
-    top: 27%;
-    position: fixed;
-
-
-    @include  mixins.responsive(desktop){
+    .nav-links {
+      list-style: none;
+      z-index: 20;
+      padding: 15px;
+      top: 27%;
       position: fixed;
-      top: 50%;
-      left: 50%;
-      text-align: center;
-      padding: 0;
-      transform: translate(-50%, -50%);
-    }
 
-    li {
-      margin: 20px 0;
-      opacity: 0;
-      transform: translateY(-20px);
-      transition: opacity 0.3s ease, transform 0.3s ease;
 
-      @for $i from 1 through 5 {
-        &:nth-child(#{$i}) {
-          transition-delay: 0.1s * $i;
+      @include mixins.responsive(desktop) {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        padding: 0;
+        transform: translate(-50%, -50%);
+      }
+
+      li {
+        margin: 20px 0;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 0.6s ease, transform 0.6s ease;
+
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            transition-delay: 0.1s * $i;
+          }
         }
       }
-    }
 
-    a {
-      color: variables.$primary-color;
-      text-decoration: none;
-      font-size: 2rem;
-      @include mixins.font-poppins($weight: bold);
+      a {
+        color: variables.$primary-color;
+        text-decoration: none;
+        font-size: 2rem;
+        @include mixins.font-poppins($weight: bold);
 
-      &:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &.active li {
+        opacity: 1;
+        transform: translateX(0);
       }
     }
-  }
 
-  .overlay.active .nav-links li {
-    opacity: 1;
-    transform: translateY(0);
+    &.active {
+
+      opacity: 1;
+      visibility: visible;
+    }
+
   }
 }

@@ -76,7 +76,7 @@ const ContactFormSection = ({showModal = false, closeModal}) => {
                                     id="email"
                                     name="email"
                                     value={email}
-                                    label="Email-addresse"
+                                    label="E-Mail-Adresse"
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
 
