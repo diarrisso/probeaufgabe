@@ -8,6 +8,7 @@ const ContactFormSection = ({showModal = false, closeModal}) => {
     const [email, setEmail] = useState('');
     const [errors, setErrors] = useState({});
     const [message, setMessage] = useState('');
+    const [showModalOverlay, setShowModalOverlay] = useState(false);
 
     const validationForm = () => {
         let inputError = {};
@@ -21,33 +22,50 @@ const ContactFormSection = ({showModal = false, closeModal}) => {
         return Object.keys(inputError).length === 0;
     }
 
+    useEffect(() => {
+        if (showModal) {
+            const timeOutOverlay = setTimeout(() => {
+                setShowModalOverlay(true)
+            }, 300);
+
+            return () => clearTimeout(timeOutOverlay);
+
+        } else {
+            setShowModalOverlay(false);
+            setMessage('');
+            setLastName('');
+            setFirstName('');
+            setEmail('');
+            setErrors({});
+        }
+
+    }, [showModal]);
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
-
         if (validationForm()) {
-
-
-            useEffect(() => {
-
-            }, []);
-
-
             setMessage("your message has been successfully submitted ");
+
+            setTimeout(() => {
+                setMessage('');
+                setLastName('');
+                setFirstName('');
+                setEmail('');
+                setErrors({});
+            }, 6000);
+
+
         }
 
-        /*  setMessage('');
-          setLastName('');
-          setEmail('');
-          setErrors({});*/
     }
 
     return (
         <div>
             {showModal ? (
                 <div className='modal-overlay'>
-                    <div className='modal'>
-                        <div className='modal-content'>
+                    <div className={`modal ${showModalOverlay ? "active" : ""} `}>
+                        <div className="modal-content">
                             <span className='close-button' onClick={closeModal}>&times;</span>
                             <h2>Personalized email campaigns that</h2>
                             <p>Aliquam erat volutpat. Nullam scelerisque auctor libero, id volutpat est dignissim
