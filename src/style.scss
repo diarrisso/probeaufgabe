@@ -13,7 +13,6 @@
 @use 'scss/sections/newsletter';
 
 body {
-  background-color: #f8f9fa;
   color: $primary-color;
   font-size: 1rem;
 }
@@ -23,11 +22,5 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
-
-main {
-  display: grid;
-  gap: 1rem;
-}
-
 
 
